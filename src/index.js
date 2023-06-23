@@ -1,4 +1,6 @@
-// const、let等の変数宣言
+/**
+ * const、let等の変数宣言
+ */
 
 // var val1 = "var変数";
 // console.log(val1);
@@ -38,8 +40,23 @@
 // val4.adress = "koyot";
 // console.log(val4);
 
-//constで定義した配列はプロパティの変更が可能
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey"); //push追加
-console.log(val5);
+// //constで定義した配列はプロパティの変更が可能
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey"); //push追加
+// console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+const name = "takaya";
+const age = 31;
+//私の名前はyakayaです。年齢は31歳です
+
+//従来の方法
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+//テンプレート文字列を用いた場合
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
