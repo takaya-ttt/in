@@ -30,10 +30,16 @@
 // const val3 = "const再宣言";
 
 //constで定義したオブジェクトはプロパティの変更が可能
-const val4 = {
-  name: "ty",
-  age: 31
-};
-val4.name = "たかや";
-val4.adress = "koyot";
-console.log(val4);
+// const val4 = {
+//   name: "ty",
+//   age: 31
+// };
+// val4.name = "たかや";
+// val4.adress = "koyot";
+// console.log(val4);
+
+//constで定義した配列はプロパティの変更が可能
+const val5 = ["dog", "cat"];
+val5[0] = "bird";
+val5.push("monkey"); //push追加
+console.log(val5);
