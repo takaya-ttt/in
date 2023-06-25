@@ -68,21 +68,48 @@
 // function func1(str) {
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("func1です"));
-
-//アロー関数
-const func2 = (str) => str;
-// { これを1行に省略すると↑
-//   // =>が→みたいだからアロー関数という。これが出てくれば関数とおもえ！
+// const func1 = function (str) {
 //   return str;
 // };
-console.log(func2("func2です"));
+// console.log(func1("func1です"));
 
-const func3 = (num1, num2) => num1 + num2;
-// {　これを1行に省略すると↑
-//   return num1 + num2;
+// //アロー関数
+// const func2 = (str) => str;
+// // { これを1行に省略すると↑
+// //   // =>が→みたいだからアロー関数という。これが出てくれば関数とおもえ！
+// //   return str;
+// // };
+// console.log(func2("func2です"));
+
+// const func3 = (num1, num2) => num1 + num2;
+// // {　これを1行に省略すると↑
+// //   return num1 + num2;
+// // };
+// console.log(func3(10, 20));
+
+/*
+分割代入
+*/
+
+//オブジェクトの場合
+// const myProfile = {
+//   name: "jack",
+//   age: 8
 // };
-console.log(func3(10, 20));
+
+// const message1 = `名前は${myProfile.name}、年齢は${myProfile.age}ヶ月です、`;
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}、年齢は${age}ヶ月です、`;
+// console.log(message1);
+
+//配列の場合
+const myProfile = [`jyack`, 8];
+
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}ヶ月です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `名前は${name}です。年齢は${age}です。`;
+console.log(message4);
