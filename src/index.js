@@ -104,12 +104,16 @@
 // const message2 = `名前は${name}、年齢は${age}ヶ月です、`;
 // console.log(message1);
 
-//配列の場合
-const myProfile = [`jyack`, 8];
+// //配列の場合
+// const myProfile = [`jyack`, 8];
 
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}ヶ月です。`;
-console.log(message3);
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}ヶ月です。`;
+// console.log(message3);
 
-const [name, age] = myProfile;
-const message4 = `名前は${name}です。年齢は${age}です。`;
-console.log(message4);
+// const [name, age] = myProfile;
+// const message4 = `名前は${name}です。年齢は${age}です。`;
+// console.log(message4);
+
+/**
+デフォルト値、引数等
+*/
