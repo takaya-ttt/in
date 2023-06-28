@@ -114,6 +114,8 @@
 // const message4 = `名前は${name}です。年齢は${age}です。`;
 // console.log(message4);
 
-/**
-デフォルト値、引数等
-*/
+// /**
+// デフォルト値、引数等
+// */
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん`);
+// sayHello("jack");
